@@ -1,0 +1,13 @@
+<% include header.ejs %>
+
+
+<h1>Listado de preguntas disponibles</h1>
+
+
+<table>
+<% var i; for (i=0; i< filas.length; i++) { %>
+	<tr><td><a href='quizes/<%=filas[i].id %>'><%= filas[i].pregunta %></a></td></tr>
+<% } %>
+</table>
+
+<% include footer.ejs %>
